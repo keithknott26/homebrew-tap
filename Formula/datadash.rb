@@ -11,7 +11,7 @@ class Datadash < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/keithknott26/datadash/releases/download/v0.5.1/datadash_0.5.1_darwin_amd64.tar.gz"
-      sha256 "32ed5ebd0381c2bdf37ec5201ef750d9cf3f7bb958458b718595724a36c0678a"
+      sha256 "41c26c06c84ceffe67ea9ad7d38232224f346de057ba9372f4006ae2de632bbf"
 
       define_method(:install) do
         bin.install "datadash"
@@ -19,7 +19,7 @@ class Datadash < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/keithknott26/datadash/releases/download/v0.5.1/datadash_0.5.1_darwin_arm64.tar.gz"
-      sha256 "2cfaf0525cf7a235b4c23f49992f40f73985def48191b089ec515e267c152856"
+      sha256 "44646bbc870d32815035b2fa2b3afb54fefae03b4b12b6774637011b908bcd04"
 
       define_method(:install) do
         bin.install "datadash"
@@ -30,14 +30,14 @@ class Datadash < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/keithknott26/datadash/releases/download/v0.5.1/datadash_0.5.1_linux_amd64.tar.gz"
-      sha256 "d0708c34a3ee2b6e168744cf6e9e4d2af2ed049fa230c35209b1a6de8bc2d863"
+      sha256 "332365df83874477c901832e23414d850ad233efef9c6b25e630cf62658b53c8"
       define_method(:install) do
         bin.install "datadash"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/keithknott26/datadash/releases/download/v0.5.1/datadash_0.5.1_linux_arm64.tar.gz"
-      sha256 "c3617cde2a31837783c200b33ab356835f19b0f137f442b62f6d3f08d3461a0b"
+      sha256 "15f350b6baa714ceb2038605d87d090d2ca7b8581ee146de7fef6a6664b34553"
       define_method(:install) do
         bin.install "datadash"
       end
